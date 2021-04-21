@@ -38,6 +38,8 @@
         <option value="$PROJECT_DIR$/eureka-client-gateway8527/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-center-config/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-client-config8700/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-client-config8800/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,8 +10,8 @@ spring:
           uri: https://github.com/bangbangzhou/springcloud-config.git
           username: bangbangzhou
           password: Zbb920704
+          force-pull: true
       label: main #默认的
-
 eureka:
   client:
     register-with-eureka: true
@@ -21,3 +21,11 @@ eureka:
   instance:
     instance-id: config3344
     prefer-ip-address: true
+
+
+## 暴露bus刷新配置的端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "bus-refresh"

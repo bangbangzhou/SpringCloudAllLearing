@@ -28,6 +28,7 @@
         <module name="eureka-center-config" />
         <module name="zookeeper-provider7001" />
         <module name="eureka-consumer-feign9500" />
+        <module name="eureka-client-config8800" />
         <module name="eureka-client-consumer8003" />
         <module name="zookeeper-consumer7010" />
         <module name="eureka-server-hystrix8110" />
@@ -35,6 +36,7 @@
         <module name="eureka-server-feign9100" />
         <module name="eureka-client-gateway8527" />
         <module name="eureka-consumer-feign9400" />
+        <module name="eureka-client-config8700" />
         <module name="eureka-hystrix-feign-hystrix8310" />
         <module name="eureka-server-demo8004" />
         <module name="eureka-provider-hystrix-dashboard" />
@@ -49,6 +51,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consul-discovery-consumer7012" options="" />
       <module name="consul-discovery-provider7002" options="" />
+      <module name="eureka-client-config8700" options="" />
+      <module name="eureka-client-config8800" options="" />
       <module name="eureka-client-consumer8006" options="" />
       <module name="eureka-client-gateway8527" options="" />
       <module name="eureka-client-provider8002" options="" />

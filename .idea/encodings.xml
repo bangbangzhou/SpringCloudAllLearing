@@ -7,6 +7,10 @@
     <file url="file://$PROJECT_DIR$/consul-discovery-provider7002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-center-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-center-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client-config8700/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client-config8700/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client-config8800/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client-config8800/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-consumer8003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-consumer8003/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-consumer8006/src/main/java" charset="UTF-8" />
