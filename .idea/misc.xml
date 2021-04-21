@@ -37,6 +37,7 @@
         <option value="$PROJECT_DIR$/eureka-provider-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-gateway8527/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-center-config/pom.xml" />
       </list>
     </option>
   </component>

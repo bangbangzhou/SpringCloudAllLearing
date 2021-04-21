@@ -1,4 +1,4 @@
-package com.cn.springcloud.springcloudconfig;
+package com.cn.springcloud.eurekacenterconfig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class SpringcloudConfigApplication {
+public class EurekaCenterConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringcloudConfigApplication.class, args);
+        SpringApplication.run(EurekaCenterConfigApplication.class, args);
     }
 
 }

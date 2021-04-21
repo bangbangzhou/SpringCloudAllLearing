@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: eureka-center-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bangbangzhou/springcloud-config.git
+          username: bangbangzhou
+          password: Zbb920704
+      label: main #默认的
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://replica1:8001/eureka/,http://replica2:8004/eureka/ #注册表地址
+  instance:
+    instance-id: config3344
+    prefer-ip-address: true

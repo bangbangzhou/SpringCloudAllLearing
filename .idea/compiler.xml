@@ -25,6 +25,7 @@
         <module name="eureka-hystrix-provider8210" />
         <module name="eureka-client-consumer8006" />
         <module name="springcloud-config" />
+        <module name="eureka-center-config" />
         <module name="zookeeper-provider7001" />
         <module name="eureka-consumer-feign9500" />
         <module name="eureka-client-consumer8003" />
@@ -40,6 +41,9 @@
         <module name="ribbon-eureka-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-config" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
