@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ribbon-eureka-provider7400" />
+        <module name="ribbon-eureka-consumer7700" />
+        <module name="eureka-client-provider8005" />
+        <module name="consul-discovery-provider7002" />
+        <module name="eureka-client-provider8002" />
+        <module name="eureka-hystrix-feign-consumer8310" />
+        <module name="ribbon-eureka-provider7300" />
+        <module name="ribbon-eureka-consumer7600" />
+        <module name="consul-discovery-consumer7012" />
+        <module name="eureka-provider-feign9300" />
+        <module name="eureka-consumer-feign9700" />
+        <module name="ribbon-eureka-provider7200" />
+        <module name="ribbon-eureka-consumer7500" />
+        <module name="ribbon-eureka-server7200" />
+        <module name="eureka-provider-feign9200" />
+        <module name="eureka-consumer-feign9600" />
+        <module name="eureka-hystrix-provider8210" />
+        <module name="eureka-client-consumer8006" />
+        <module name="springcloud-config" />
+        <module name="zookeeper-provider7001" />
+        <module name="eureka-consumer-feign9500" />
+        <module name="eureka-client-consumer8003" />
+        <module name="zookeeper-consumer7010" />
+        <module name="eureka-server-hystrix8110" />
+        <module name="eureka-server-demo8001" />
+        <module name="eureka-server-feign9100" />
+        <module name="eureka-client-gateway8527" />
+        <module name="eureka-consumer-feign9400" />
+        <module name="eureka-hystrix-feign-hystrix8310" />
+        <module name="eureka-server-demo8004" />
+        <module name="eureka-provider-hystrix-dashboard" />
+        <module name="ribbon-eureka-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consul-discovery-consumer7012" options="" />
+      <module name="consul-discovery-provider7002" options="" />
+      <module name="eureka-client-consumer8006" options="" />
+      <module name="eureka-client-gateway8527" options="" />
+      <module name="eureka-client-provider8002" options="" />
+      <module name="eureka-client-provider8005" options="-parameters" />
+      <module name="eureka-consumer-feign9400" options="-parameters" />
+      <module name="eureka-consumer-feign9500" options="-parameters" />
+      <module name="eureka-consumer-feign9600" options="-parameters" />
+      <module name="eureka-consumer-feign9700" options="-parameters" />
+      <module name="eureka-hystrix-feign-consumer8310" options="" />
+      <module name="eureka-hystrix-provider8210" options="" />
+      <module name="eureka-provider-feign9200" options="" />
+      <module name="eureka-provider-feign9300" options="-parameters" />
+      <module name="eureka-provider-hystrix-dashboard" options="" />
+      <module name="eureka-server-demo8001" options="" />
+      <module name="eureka-server-demo8004" options="" />
+      <module name="eureka-server-feign9100" options="" />
+      <module name="ribbon-eureka-consumer7500" options="-parameters" />
+      <module name="ribbon-eureka-consumer7600" options="" />
+      <module name="ribbon-eureka-consumer7700" options="" />
+      <module name="ribbon-eureka-provider7300" options="" />
+      <module name="ribbon-eureka-provider7400" options="-parameters" />
+      <module name="ribbon-eureka-server7200" options="-parameters" />
+      <module name="springcloud-config" options="-parameters" />
+      <module name="zookeeper-consumer7010" options="" />
+      <module name="zookeeper-provider7001" options="" />
+    </option>
+  </component>
+</project>

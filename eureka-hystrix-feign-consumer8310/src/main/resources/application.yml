@@ -1,0 +1,48 @@
+server:
+  port: 8310
+spring:
+  application:
+    name: eureka-hystrix-feign-consumer
+# 设置feign客户端超时时间(OpenFeign默认支持ribbon)
+ribbon:
+  # 指的是建立连接所用的时间,适用于网络状态正常的情况下,两端连接所用的时间
+  ReadTimeout: 5000
+  # 指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 5000
+
+feign:
+  hystrix:
+    enabled: true #在feign中开启hystrix
+  client:
+    config:
+      default:
+        connect-timeout: 10000
+        read-timeout: 10000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+#hystrix:
+#  command:
+#    default:  #default全局有效，service id指定应用有效
+#      execution:
+#        timeout:
+#        #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
+#        enabled: true
+eureka:
+  client:
+    # 默认true,false表示自己端就是注册中心，职责是维护服务实例，不需要检索服务
+    register-with-eureka: true
+    #false 表示不向注册中心注册自己 ，默认true，
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8110/eureka/
+  instance:
+#    instance-id: hystrix-consumer8310
+    prefer-ip-address: true

@@ -1,0 +1,16 @@
+server:
+  port: 7500
+
+spring:
+  application:
+    name: ribbon-eureka-consumer
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7200/eureka/
+  instance:
+    instance-id: consumer7500
+    #访问路径显示IP地址
+    prefer-ip-address: true

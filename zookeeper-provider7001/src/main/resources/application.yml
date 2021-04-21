@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zookeeper-provider
+  cloud:
+    zookeeper:
+      connect-string: 192.168.199.136:49156
+      #zookeeper作为注册中心的配置项，对应ZookeeperDiscoveryProperties配置类
+      discovery:
+        root: /services #Zookeeper数据存储的根节点，默认为/services
+server:
+  port: 7001
+
+

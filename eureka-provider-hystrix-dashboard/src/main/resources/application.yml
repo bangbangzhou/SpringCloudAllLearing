@@ -1,0 +1,12 @@
+server:
+  port: 8410
+spring:
+  application:
+    name: eureka-provider-hystrix-dashboard
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8110/eureka/
+

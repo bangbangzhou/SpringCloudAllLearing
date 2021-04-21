@@ -1,0 +1,13 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: eureka-server-feign
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: eureka-feign
+    #访问路径可以显示IP地址
+    prefer-ip-address: true

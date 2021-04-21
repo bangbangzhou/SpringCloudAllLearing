@@ -1,0 +1,32 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: eureka-consumer-feign
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9100/eureka/
+  instance:
+    instance-id: feign9500
+    prefer-ip-address: true
+
+logging:
+  level:
+    # feign日志以什么级别监控哪个接口
+    com.cn.springcloud.eurekaconsumerfeign9500.service.ConsumerService: debug
+
+feign:
+  # Feign 客户端配置，对应 FeignClientProperties 配置属性类
+  client:
+    # config 配置项是 Map 类型。key 为 Feign 客户端的名字，value 为 FeignClientConfiguration 对象
+    config:
+      # 全局级别配置
+      default:
+        logger-level: BASIC
+      # 客户端级别配置
+#      eureka-provider-feign:
+#        logger-level: FULL

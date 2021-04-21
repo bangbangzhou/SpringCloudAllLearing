@@ -1,0 +1,16 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: eureka-clinet-provider
+eureka:
+  client:
+    register-with-eureka: true #注册到Eureka-Server
+    fetch-registry: true # 从Eureka-server获取注册表
+    service-url:
+      #      defaultZone: http://replica1:8001/eureka/,http://replica2:8004/eureka/ #注册表地址
+      defaultZone: http://replica2:8004/eureka/,http://replica1:8001/eureka/ #注册表地址
+  instance:
+    instance-id: provider8002
+    ## 访问路径可以显示IP地址
+    prefer-ip-address: true

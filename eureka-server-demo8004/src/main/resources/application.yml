@@ -1,0 +1,16 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://replica1:8001/eureka/
+  instance:
+    hostname: eureka-replica2
+    #访问路径可以显示IP地址
+    prefer-ip-address: true

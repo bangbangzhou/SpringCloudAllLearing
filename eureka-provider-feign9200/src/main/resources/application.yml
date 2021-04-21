@@ -1,0 +1,17 @@
+server:
+  port: 9200
+spring:
+  application:
+    name: eureka-provider-feign
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9100/eureka/
+  instance:
+    instance-id: feign9200
+    #访问路径显示IP地址
+    prefer-ip-address: true

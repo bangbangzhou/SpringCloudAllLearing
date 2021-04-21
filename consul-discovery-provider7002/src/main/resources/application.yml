@@ -1,0 +1,16 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: consul-provider
+  cloud:
+    #spring cloud consul 通用配置项。对应ConsulProperties类
+    consul:
+      host: localhost
+      port: 8500
+      #Spring Cloud Consul Discovery配置项，对应 ConsulDiscoveryProperties 类
+      discovery:
+        #注册搭配Consul的服务名，默认为spring.application.name
+        service-name: ${spring.application.name}
+        #健康检查接口，默认/actuator/health，由 Spring Boot Actuator 提供
+        health-check-path: /actuator/health

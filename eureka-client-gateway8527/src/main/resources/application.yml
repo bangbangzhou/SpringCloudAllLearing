@@ -1,0 +1,48 @@
+server:
+  port: 8527
+spring:
+  application:
+    name: eureka-clinet-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 开启从注册中心动态创建路由的功能，利用微服务名称j进行路由
+      routes:
+        - id: payment_route # 路由的id,没有规定规则但要求唯一,建议配合服务名
+          #匹配后提供服务的路由地址
+#          uri: http://localhost:8002
+          uri: lb://eureka-clinet-provider
+          predicates:
+            - Path=/provider/get/** # 断言，路径相匹配的进行路由
+              #- After=2017-01-20T17:42:47.789-07:00[America/Denver]
+              #- Before=2017-01-20T17:42:47.789-07:00[America/Denver]
+              #- Cookie=username,zzyy
+              #- Header=X-Request-Id, \d+ #请求头要有X-Request-Id属性，并且值为正数
+              #- Host=**.atguigu.com
+            #- Method=GET
+            #- Query=username, \d+ # 要有参数名username并且值还要是正整数才能路由
+            # 过滤
+            #filters:
+            #  - AddRequestHeader=X-Request-red, blue
+        - id: payment_route2
+#          uri: http://localhost:8002
+          uri: lb://eureka-clinet-provider
+          predicates:
+            - After=2021-04-20T23:30:26.252+08:00[Asia/Shanghai]
+            - Path=/provider/lb/** #断言,路径相匹配的进行路由
+            - Cookie=username,zbb
+#            - Header=X-Request-Id, \d+  #表示请求头中必须保护X-Request-Id,且值为正数 \d+为正则表达式
+          filters:
+            - AddRequestHeader=X-Request-Id,1024
+eureka:
+  client:
+    register-with-eureka: true #注册到Eureka-Server
+    fetch-registry: true # 从Eureka-server获取注册表
+    service-url:
+      defaultZone: http://replica1:8001/eureka/,http://replica2:8004/eureka/ #注册表地址
+  #      defaultZone: http://localhost:8001/eureka/  #注册表地址
+  instance:
+    instance-id: gateway8527
+    ## 访问路径可以显示IP地址
+    prefer-ip-address: true

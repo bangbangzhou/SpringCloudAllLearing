@@ -1,0 +1,19 @@
+server:
+  port: 9700
+spring:
+  application:
+    name: eureka-consumer-feign
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9100/eureka/
+  instance:
+    instance-id: feign9700
+    prefer-ip-address: true
+logging:
+  level:
+    # feign日志以什么级别监控哪个接口
+    com.cn.springcloud.eurekaconsumerfeign9600.service.ConsumerService: debug

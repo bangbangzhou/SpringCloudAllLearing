@@ -1,0 +1,21 @@
+server:
+  port: 7012
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500 # Consul 端口
+      # Spring Cloud Consul Discovery 配置项，对应 ConsulDiscoveryProperties 类
+      discovery:
+        # 注册到 Consul 的服务名，默认为 `spring.application.name` 配置项
+        service-name: ${spring.application.name}
+        # 健康检查的接口，默认为 /actuator/health，由 Spring Boot Actuator 提供
+        health-check-path: /actuator/health
+        register: true  # 消费者,不需要注册到consul中
+        # 表示注册时使用IP而不是hostname
+        prefer-ip-address: true
+        ip-address: 127.0.0.1
+
+

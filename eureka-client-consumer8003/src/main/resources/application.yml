@@ -1,0 +1,22 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: eureka-client-consumer8003
+eureka:
+  client:
+    register-with-eureka: true #注册到Eureka-Server
+    fetch-registry: true # 从Eureka-server获取注册表
+    service-url:
+      defaultZone: http://replica1:8001/eureka/,http://replica2:8004/eureka/ #注册表地址
+  instance:
+    instance-id: consumer8003
+    #访问路径可以显示IP地址
+    prefer-ip-address: true
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8001/eureka/
