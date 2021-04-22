@@ -18,6 +18,7 @@
         <module name="eureka-provider-feign9300" />
         <module name="eureka-consumer-feign9700" />
         <module name="ribbon-eureka-provider7200" />
+        <module name="eureka-server-demo8004" />
         <module name="ribbon-eureka-consumer7500" />
         <module name="ribbon-eureka-server7200" />
         <module name="eureka-provider-feign9200" />
@@ -25,7 +26,6 @@
         <module name="eureka-hystrix-provider8210" />
         <module name="eureka-client-consumer8006" />
         <module name="springcloud-config" />
-        <module name="eureka-center-config" />
         <module name="zookeeper-provider7001" />
         <module name="eureka-consumer-feign9500" />
         <module name="eureka-client-config8800" />
@@ -38,7 +38,7 @@
         <module name="eureka-consumer-feign9400" />
         <module name="eureka-client-config8700" />
         <module name="eureka-hystrix-feign-hystrix8310" />
-        <module name="eureka-server-demo8004" />
+        <module name="eureka-center-config" />
         <module name="eureka-provider-hystrix-dashboard" />
         <module name="ribbon-eureka-server" />
       </profile>
